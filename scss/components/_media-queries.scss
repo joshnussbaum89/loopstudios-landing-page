@@ -1,11 +1,15 @@
 /* ============================================= */
+
+
 /*              Media Queries                    */
+
+
 /* ============================================= */
 
 @media (min-width: $md) {
-    
+    .hero-nav-desktop {
+        display: flex;
+    }
 }
 
-@media (min-width: $lg){
-    
-}
+@media (min-width: $lg) {}

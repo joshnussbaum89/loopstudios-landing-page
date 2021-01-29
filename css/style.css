@@ -398,6 +398,7 @@ li {
 }
 .hero-nav-desktop {
   margin-left: auto;
+  display: none;
 }
 .hero-text {
   position: absolute;
@@ -437,5 +438,10 @@ li {
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
+@media (min-width: 768px) {
+  .hero-nav-desktop {
+    display: flex;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
