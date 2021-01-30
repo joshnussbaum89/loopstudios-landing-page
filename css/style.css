@@ -382,6 +382,8 @@ li {
 /*              Hamburger Menu                   */
 /* ============================================= */
 .hamburger {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -404,12 +406,10 @@ li {
 }
 
 .hamburger-x-top {
-  background-color: black;
   transform: rotate(-45deg) translate(0, 5.5px);
 }
 
 .hamburger-x-bottom {
-  background-color: black;
   transform: rotate(45deg) translate(0, -5.5px);
 }
 
@@ -461,6 +461,44 @@ li {
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */
+/* The Overlay (background) */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.6s ease-in-out;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
 /* ============================================= */
 /*              Pagination                       */
 /* ============================================= */
