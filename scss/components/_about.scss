@@ -5,3 +5,16 @@
 
 
 /* ============================================= */
+
+.about {
+    &-pic {
+        @include center;
+        margin-top: 8rem;
+        width: 90%;
+    }
+    &-description {
+        width: 90%;
+        @include center;
+    }
+
+}

@@ -357,6 +357,20 @@ li {
 /* ============================================= */
 /*              about                            */
 /* ============================================= */
+.about-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  width: 90%;
+}
+.about-description {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ============================================= */
 /*              Buttons                          */
 /* ============================================= */
@@ -382,7 +396,9 @@ li {
 /*              Hamburger Menu                   */
 /* ============================================= */
 .hamburger {
-  position: relative;
+  position: fixed;
+  top: 63px;
+  right: 34px;
   z-index: 1;
   display: flex;
   flex-direction: column;
