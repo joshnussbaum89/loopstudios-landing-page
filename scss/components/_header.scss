@@ -1,22 +1,24 @@
 /* ============================================= */
 
-
 /*              Header                           */
-
 
 /* ============================================= */
 
 .hero {
-    background-image: url('/images/mobile/image-hero.jpg');
+    background-image: url("/images/mobile/image-hero.jpg");
     background-size: cover;
     position: relative;
     height: 100vh;
     color: white;
     &-nav {
-        @include flexy($align: center, $just: space-between);
         padding-top: 2rem;
         margin: auto;
         width: 86.5%;
+        h1 {
+            z-index: 10;
+            left: 6%;
+            position: fixed;
+        }
         &-desktop {
             margin-left: auto;
             display: none;
@@ -24,11 +26,12 @@
     }
     &-text {
         @include absoluteCenter;
+        text-align: left; // mobile only
         font-size: 3rem;
         padding: 2rem;
         text-transform: uppercase;
         outline: 2px solid white;
-        width: 80%
+        width: 80%;
     }
 }
 

@@ -1,22 +1,40 @@
 /* ============================================= */
 
-
 /*              Typography                       */
-
 
 /* ============================================= */
 
 body {
-    font-family: "Josefin Sans";
-    // font-family: 'Alata', sans-serif;
+    font-family: "Alata", sans-serif;
+    letter-spacing: 0.04rem;
     font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Josefin Sans";
 }
 
 h1 {
     text-transform: lowercase;
+    font-weight: 400;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 ul,
 li {
     list-style: none;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
 }

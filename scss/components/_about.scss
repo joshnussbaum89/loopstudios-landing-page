@@ -1,8 +1,6 @@
 /* ============================================= */
 
-
 /*              about                            */
-
 
 /* ============================================= */
 
@@ -13,8 +11,15 @@
         width: 90%;
     }
     &-description {
-        width: 90%;
         @include center;
+        width: 75%;
+        text-align: center;
+        h2 {
+            margin: 3rem 0 2rem;
+        }
+        p {
+            margin: 0;
+            color: $text-light;
+        }
     }
-
 }

@@ -341,17 +341,38 @@ template {
 /*              Typography                       */
 /* ============================================= */
 body {
-  font-family: "Josefin Sans";
+  font-family: "Alata", sans-serif;
+  letter-spacing: 0.04rem;
   font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Josefin Sans";
 }
 
 h1 {
   text-transform: lowercase;
+  font-weight: 400;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 ul,
 li {
   list-style: none;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
 }
 
 /* ============================================= */
@@ -365,10 +386,18 @@ li {
   width: 90%;
 }
 .about-description {
-  width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 75%;
+  text-align: center;
+}
+.about-description h2 {
+  margin: 3rem 0 2rem;
+}
+.about-description p {
+  margin: 0;
+  color: #777f85;
 }
 
 /* ============================================= */
@@ -397,8 +426,8 @@ li {
 /* ============================================= */
 .hamburger {
   position: fixed;
-  top: 63px;
-  right: 34px;
+  top: 65px;
+  right: 7%;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -440,12 +469,14 @@ li {
   color: white;
 }
 .hero-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 2rem;
   margin: auto;
   width: 86.5%;
+}
+.hero-nav h1 {
+  z-index: 10;
+  left: 6%;
+  position: fixed;
 }
 .hero-nav-desktop {
   margin-left: auto;
@@ -457,6 +488,7 @@ li {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  text-align: left;
   font-size: 3rem;
   padding: 2rem;
   text-transform: uppercase;
@@ -495,14 +527,16 @@ li {
 .overlay-content {
   position: relative;
   top: 25%;
+  left: 6%;
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin-top: 30px;
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
-  padding: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-decoration: none;
   font-size: 36px;
   color: #818181;
@@ -511,7 +545,8 @@ li {
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #f1f1f1;
 }
 
@@ -528,8 +563,21 @@ li {
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {
+  .hero-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-nav h1 {
+    top: 5%;
+    left: 7%;
+  }
+
   .hero-nav-desktop {
     display: flex;
+    top: 7%;
+    right: 7%;
+    position: fixed;
   }
 
   .hamburger {

@@ -3,14 +3,14 @@
 // ======================================
 
 // Colors
-
 $earth-green: #758b72;
 $mint: #58e1c1;
 $aqua: #52bab3;
 $mario: #5db1ad;
-$ocean: #3dafbe; 
+$ocean: #3dafbe;
 $ocean-light: lighten($ocean, 15%);
 $text: #51575b;
+$text-light: #777f85;
 $babish-grey: #363636;
 $babish-black: #131416;
 $grey: #777;
@@ -26,9 +26,7 @@ $thouse: #3659a2;
 $text-field: #4683af;
 $overlay: rgba(11, 13, 77, 0.4);
 
-
 // Button Colors
-
 $button-default: #51ddfc;
 $button-default-light: lighten($button-default, 15%);
 
@@ -48,7 +46,6 @@ $button-blue: #4a89ca;
 $button-blue-light: lighten($button-blue, 15%);
 
 // Grid Colors
-
 $light-purple: #deb2ee;
 $light-blue: #7ee6fd;
 $mint-green: #88d9a0;
@@ -61,11 +58,9 @@ $heading-tan: #ffca99;
 $yellow: yellow;
 
 // Fonts
-
 $font-primary: "Lato", sans-serif;
 
 // Breakpoints
-
 $sm: 576px;
 $md: 768px;
 $lg: 992px;

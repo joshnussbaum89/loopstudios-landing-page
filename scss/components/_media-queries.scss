@@ -1,18 +1,27 @@
 /* ============================================= */
 
-
 /*              Media Queries                    */
-
 
 /* ============================================= */
 
 @media (min-width: $md) {
+    .hero-nav {
+        @include flexy($align: center, $just: space-between);
+        h1 {
+            top: 5%;
+            left: 7%;
+        }
+    }
     .hero-nav-desktop {
         display: flex;
+        top: 7%;
+        right: 7%;
+        position: fixed;
     }
     .hamburger {
         display: none;
     }
 }
 
-@media (min-width: $lg) {}
+@media (min-width: $lg) {
+}
