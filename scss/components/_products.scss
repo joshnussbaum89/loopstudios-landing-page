@@ -1,0 +1,25 @@
+/* ============================================= */
+
+/*              Products                         */
+
+/* ============================================= */
+
+.products {
+    margin: 1rem 0;
+    h2 {
+        margin: 3rem 0;
+    }
+    &-image {
+        position: relative;
+        text-align: center;
+        color: white;
+        h2 {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,17 +1,15 @@
 /* ============================================= */
 
-
 /*              Hamburger Menu                   */
-
 
 /* ============================================= */
 
 .hamburger {
+    @include flexy($dir: column, $just: space-between);
     position: fixed;
     top: 65px;
     right: 7%;
     z-index: 1;
-    @include flexy($dir: column, $just: space-between);
     cursor: pointer;
     height: 10px;
     width: 25px;
@@ -19,13 +17,13 @@
         border-radius: 5px;
         padding: 0 10px;
         height: 2px;
-        transition: .2s;
+        transition: 0.2s;
         background-color: white;
     }
     &-bottom {
         border-radius: 5px;
         height: 2px;
-        transition: .2s;
+        transition: 0.2s;
         background-color: white;
     }
 }

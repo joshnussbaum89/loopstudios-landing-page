@@ -5,15 +5,17 @@
 /* ============================================= */
 
 .about {
+    margin-bottom: 7rem;
     &-pic {
-        @include center;
+        display: block;
+        margin: auto;
         margin-top: 8rem;
-        width: 90%;
+        width: 100%;
     }
     &-description {
         @include center;
+        background: $white;
         width: 75%;
-        text-align: center;
         h2 {
             margin: 3rem 0 2rem;
         }
