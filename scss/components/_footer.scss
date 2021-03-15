@@ -3,7 +3,7 @@
 /* ============================================= */
 
 .footer {
-    background: $babish-black;
+    background: black;
     padding: 2rem 2rem;
     text-align: center;
     color: white;
@@ -19,12 +19,20 @@
             margin-top: 2rem;
         }
         li:nth-child(6) {
-            margin: 4rem 0;
+            margin-top: 4rem;
         }
     }
     .attribution {
         color: grey;
         font-weight: 200;
         font-family: "Josefin Sans";
+        span {
+            display: block;
+            margin-top: 3rem;
+        }
     }
+}
+
+.footer-nav-icon {
+    padding: 0 0.5rem;
 }

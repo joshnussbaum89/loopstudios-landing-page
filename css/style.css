@@ -420,7 +420,7 @@ p {
 /*              Footer                           */
 /* ============================================= */
 .footer {
-  background: #131416;
+  background: black;
   padding: 2rem 2rem;
   text-align: center;
   color: white;
@@ -438,12 +438,20 @@ p {
   margin-top: 2rem;
 }
 .footer-nav li:nth-child(6) {
-  margin: 4rem 0;
+  margin-top: 4rem;
 }
 .footer .attribution {
   color: grey;
   font-weight: 200;
   font-family: "Josefin Sans";
+}
+.footer .attribution span {
+  display: block;
+  margin-top: 3rem;
+}
+
+.footer-nav-icon {
+  padding: 0 0.5rem;
 }
 
 /* ============================================= */
