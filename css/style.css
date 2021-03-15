@@ -419,8 +419,38 @@ p {
 /* ============================================= */
 /*              Footer                           */
 /* ============================================= */
+.footer {
+  background: #131416;
+  padding: 2rem 2rem;
+  text-align: center;
+  color: white;
+}
+.footer-title {
+  font-family: "Josefin Sans";
+  text-transform: lowercase;
+  font-weight: 400;
+}
+.footer-nav {
+  padding: 0;
+  margin-top: 3rem;
+}
+.footer-nav li {
+  margin-top: 2rem;
+}
+.footer-nav li:nth-child(6) {
+  margin: 4rem 0;
+}
+.footer .attribution {
+  color: grey;
+  font-weight: 200;
+  font-family: "Josefin Sans";
+}
+
+/* ============================================= */
+/*              Attribution                      */
+/* ============================================= */
 .attribution {
-  font-size: 11px;
+  font-size: 0.75rem;
   text-align: center;
 }
 
@@ -539,12 +569,16 @@ p {
   text-align: left;
   margin-top: 30px;
 }
+.overlay-content a {
+  font-family: "Josefin Sans";
+  font-weight: 100;
+}
 
 /* The navigation links inside the overlay */
 .overlay a {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 1rem 0;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 36px;
   color: #818181;
   display: block;
@@ -566,8 +600,10 @@ p {
 .products {
   margin: 1rem 0;
 }
-.products h2 {
-  margin: 3rem 0;
+.products h2:not(:first-child) {
+  font-size: 1.5rem;
+  text-align: left;
+  width: 40%;
 }
 .products-image {
   position: relative;
@@ -580,7 +616,23 @@ p {
   left: 16px;
 }
 .products-image img {
+  filter: brightness(50%);
   width: 100%;
+}
+
+.main-content-btn {
+  width: 60%;
+  margin: 0.5rem auto 5rem;
+  padding: 0.75rem 2rem;
+  background-color: white;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+.main-content-btn:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 /* ============================================= */

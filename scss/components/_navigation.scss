@@ -32,13 +32,17 @@
     width: 100%;
     text-align: left;
     margin-top: 30px;
+    a {
+        font-family: "Josefin Sans";
+        font-weight: 100;
+    }
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 1rem 0;
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 36px;
     color: #818181;
     display: block;

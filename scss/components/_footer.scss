@@ -2,11 +2,29 @@
 /*              Footer                           */
 /* ============================================= */
 
-.attribution {
-    font-size: 11px;
+.footer {
+    background: $babish-black;
+    padding: 2rem 2rem;
     text-align: center;
-  }
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    color: white;
+    &-title {
+        font-family: "Josefin Sans";
+        text-transform: lowercase;
+        font-weight: 400;
+    }
+    &-nav {
+        padding: 0;
+        margin-top: 3rem;
+        li {
+            margin-top: 2rem;
+        }
+        li:nth-child(6) {
+            margin: 4rem 0;
+        }
+    }
+    .attribution {
+        color: grey;
+        font-weight: 200;
+        font-family: "Josefin Sans";
+    }
 }
