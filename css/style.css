@@ -645,6 +645,14 @@ p {
   cursor: pointer;
 }
 
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
@@ -672,6 +680,9 @@ p {
 
   .main-content {
     margin: 0 3rem;
+  }
+  .main-content-btn {
+    margin: 2rem 0;
   }
 
   .about-pic {
@@ -701,6 +712,31 @@ p {
   .products {
     margin: 200px 0 0;
     padding: 100px 0 0;
+  }
+  .products-heading {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .products h2:first-child {
+    padding: 0.75rem 0rem;
+    text-align: left;
+    margin: 2rem 0;
+  }
+  .products-image:last-child {
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .desktop {
+    display: block;
+    width: 15%;
+    min-width: 130px;
+    height: 50%;
+  }
+
+  .mobile {
+    display: none;
   }
 }
 
