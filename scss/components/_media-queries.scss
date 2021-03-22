@@ -55,22 +55,27 @@
         }
     }
 
+    .products-desktop {
+        display: block;
+        padding: 10rem 0;
+        &-images {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 8px;
+            h2 {
+                font-size: 1.5rem;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+
     .products {
-        margin: 200px 0 0;
-        padding: 100px 0 0;
+        display: none;
         &-heading {
             display: flex;
             justify-content: space-between;
             align-content: center;
-        }
-        h2:first-child {
-            padding: 0.75rem 0rem;
-            text-align: left;
-            margin: 2rem 0;
-        }
-        &-image:last-child {
-            margin-bottom: 4rem;
-            padding-bottom: 4rem;
         }
     }
 
