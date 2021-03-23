@@ -18,6 +18,15 @@
   text-align: center;
 }
 
+// Centers content completely and sticks to page on scroll -- make sure parent is "position: relative"
+@mixin absoluteCenterFixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 // Flex container
 @mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null, $align: null, $grow: null) {
   display: $disp;

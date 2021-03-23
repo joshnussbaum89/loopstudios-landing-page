@@ -599,8 +599,76 @@ p {
 }
 
 /* ============================================= */
-/*              Pagination                       */
+/*              signup                           */
 /* ============================================= */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  border: 1px solid #4caf50;
+  border-radius: 2px 15px;
+  box-shadow: 0 0 100px black;
+  font-size: 1.2rem;
+  color: black;
+  background-color: white;
+  width: 80%;
+  max-width: 500px;
+  padding: 2rem;
+  z-index: 5;
+  transition: 0.3s;
+}
+.popup-form {
+  display: flex;
+  flex-direction: column;
+}
+.popup-form-elements {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.popup-form-elements label {
+  text-align: left;
+  min-width: 90px;
+  width: 40%;
+}
+.popup-form-elements input[type=text] {
+  width: 50%;
+  min-width: 100px;
+  padding: 5px;
+}
+.popup-form-close {
+  fill: #777f85;
+  display: block;
+  margin-left: auto;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.popup-form-close:hover {
+  fill: black;
+}
+.popup-form-title span {
+  color: #4caf50;
+  text-decoration: underline;
+}
+.popup-form-btn {
+  border: none;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: white;
+  background-color: #4caf50;
+  border: 2px solid white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.popup-form-btn:hover {
+  color: #4caf50;
+  background-color: white;
+  border: 2px solid #4caf50;
+}
+
 /* ============================================= */
 /*              Products                         */
 /* ============================================= */

@@ -1,4 +1,18 @@
 const sideNav = document.getElementById("myNav");
+const popup = document.querySelector('.popup');
+
+/**
+ * IIFE to display popup after 10 sec
+ */
+(() => {
+    setTimeout(() => {
+        popup.style.opacity = '1';
+    }, 5000);
+})();
+
+const closeSignUpForm = () => {
+    popup.style.opacity = '0';
+}
 
 /**
  * Toggles Mobile Navigation Menu On User Click
@@ -19,7 +33,7 @@ const toggleHamburgerMenu = () => {
         hamburger.style.right = '0';
     } else if (sideNav.classList.contains('open')) {
         hamburger.style.position = 'fixed';
-        hamburger.style.right = '50px';
+        hamburger.style.right = '7%';
         sideNav.style.width = "100%";
         sideNav.classList.remove('open');
         sideNav.classList.add('close');
@@ -37,8 +51,9 @@ const windowResizeWindowToggle = () => {
     }
 }
 
+// Close the sign up form
+document.querySelector('.popup-form-close').addEventListener('click', closeSignUpForm);
 // Navigation menu click
 document.querySelector('.hamburger').addEventListener('click', toggleHamburgerMenu);
-
 // Navigation menu window resize
 window.addEventListener('resize', windowResizeWindowToggle);

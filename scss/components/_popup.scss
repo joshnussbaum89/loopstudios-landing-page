@@ -1,0 +1,69 @@
+/* ============================================= */
+
+/*              signup                           */
+
+/* ============================================= */
+
+.popup {
+    @include absoluteCenterFixed;
+    opacity: 0;
+    border: 1px solid $btn-action;
+    border-radius: 2px 15px;
+    box-shadow: 0 0 100px black;
+    font-size: 1.2rem;
+    color: black;
+    background-color: white;
+    width: 80%;
+    max-width: 500px;
+    padding: 2rem;
+    z-index: 5;
+    transition: 0.3s;
+    &-form {
+        @include flexy($dir: column);
+        &-elements {
+            margin: 1rem 0;
+            @include flexy($just: space-between);
+            label {
+                text-align: left;
+                min-width: 90px;
+                width: 40%;
+            }
+            input[type="text"] {
+                width: 50%;
+                min-width: 100px;
+                padding: 5px;
+            }
+        }
+        &-close {
+            fill: $text-light;
+            display: block;
+            margin-left: auto;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        &-close:hover {
+            fill: black;
+        }
+        &-title {
+            span {
+                color: $btn-action;
+                text-decoration: underline;
+            }
+        }
+        &-btn {
+            border: none;
+            margin-top: 2rem;
+            padding: 1rem;
+            color: white;
+            background-color: $btn-action;
+            border: 2px solid white;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        &-btn:hover {
+            color: $btn-action;
+            background-color: white;
+            border: 2px solid $btn-action;
+        }
+    }
+}
