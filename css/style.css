@@ -473,9 +473,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: fixed;
-  top: 65px;
-  right: 7%;
+  position: relative;
   z-index: 1;
   cursor: pointer;
   height: 10px;
@@ -514,17 +512,18 @@ p {
   color: white;
 }
 .hero-nav {
-  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: auto;
+  padding-top: 2rem;
   width: 86.5%;
 }
 .hero-nav h1 {
-  z-index: 10;
-  left: 6%;
-  position: fixed;
+  z-index: 2;
+  position: relative;
 }
 .hero-nav-desktop {
-  margin-left: auto;
   display: none;
 }
 .hero-text {
@@ -668,16 +667,9 @@ p {
     justify-content: space-between;
     align-items: center;
   }
-  .hero-nav h1 {
-    top: 5%;
-    left: 7%;
-  }
 
   .hero-nav-desktop {
     display: flex;
-    top: 7%;
-    right: 7%;
-    position: fixed;
   }
 
   .hamburger {

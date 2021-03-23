@@ -7,16 +7,9 @@
 @media (min-width: $md) {
     .hero-nav {
         @include flexy($align: center, $just: space-between);
-        h1 {
-            top: 5%;
-            left: 7%;
-        }
     }
     .hero-nav-desktop {
-        display: flex;
-        top: 7%;
-        right: 7%;
-        position: fixed;
+        @include flexy();
     }
     .hamburger {
         display: none;

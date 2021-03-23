@@ -6,9 +6,7 @@
 
 .hamburger {
     @include flexy($dir: column, $just: space-between);
-    position: fixed;
-    top: 65px;
-    right: 7%;
+    position: relative;
     z-index: 1;
     cursor: pointer;
     height: 10px;
